@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./main.js" defer></script>
+    <script src="../crud-musica/js/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Musicas- Front</title>
 </head>
 <body>
+    <aside class="sidebar">
+        <h1> Songs</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Músicas</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Gêneros</a></li>
+                <li><a href="#">Usuário</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <input type="text" id="nome-musica" placeholder="Buscar música">
+            <button id="btn-cadastrar"> Nova Música</button>
+        </header>
+        
+        <!-- Formulário escondido por padrão -->
+        <section id="form-musica" class="form-musica hidden">
+            <h2>Nova Música</h2>
+            <form id="formulario-musica">
+                <input type="text" id="nome" placeholder="Nome da música" required>
+                <input type="text" id="duracao" placeholder="Duração (ex: 00:03:30)" required>
+                <input type="date" id="data_lancamento" placeholder="Data de lançamento" required>
+                <input type="url" id="foto_capa" placeholder="URL da imagem de capa" required>
+                <textarea id="letra" placeholder="Letra da música" required></textarea>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+        <!-- Formulário escondido por padrão -->
+        <section id="form-musica" class="form-musica hidden">
+            <h2>Nova Música</h2>
+            <form id="formulario-musica">
+                <input type="text" id="nome" placeholder="Nome da música" required>
+                <input type="text" id="duracao" placeholder="Duração (ex: 00:03:30)" required>
+                <input type="date" id="data_lancamento" placeholder="Data de lançamento" required>
+                <input type="url" id="foto_capa" placeholder="URL da imagem de capa" required>
+                <textarea id="letra" placeholder="Letra da música" required></textarea>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+    </main>
+
     
 </body>
 </html>
